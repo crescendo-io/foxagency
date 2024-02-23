@@ -1,0 +1,277 @@
+/* Typos */
+h1, h2, h3, h4, h5,
+.card-pricing .title-pricing,
+footer p,
+.fake-link,
+header.burger .button-menu,
+.menu-navigation ul li a,
+.button {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 8vw;
+    line-height: 7vw;
+
+    &.normal {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    &.big {
+        font-size: 8vw;
+        line-height: 7vw;
+    }
+
+    &.small {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+}
+
+h3 {
+    font-size: 5vw;
+    line-height: 5vw;
+}
+
+h4 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Container */
+.container {
+    max-width: 1400px;
+    width: 90%;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #000;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid #000;
+    transition: 0.3s;
+
+    &.primary {
+        background: #000;
+    }
+
+    &.secondary {
+        background: #888;
+    }
+
+    &:hover {
+        background: #FFF;
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+.white {
+    .button {
+        background: #FFF;
+        color: #000;
+        border: 0;
+    }
+}
+
+/* Specific */
+.strate-hero h4 {
+    font-size: 3vw;
+}
+
+/* Hero */
+header.burger .button-menu .text {
+    color: #FFF;
+    position: relative;
+    top: 7px;
+    font-size: 25px;
+    padding: 0 15px;
+}
+
+header.burger .button-menu .barre {
+    background: #FFF;
+}
+
+.menu-navigation ul li ul li a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header.burger.is-scrolled {
+    background: #FFF;
+    border-bottom: 2px solid #000;
+
+    .barre {
+        background: #000;
+
+        &:before,
+        &:after {
+            background: #000;
+        }
+    }
+
+    .button-menu {
+        padding: 15px 30px;
+
+        .text {
+            color: #000;
+        }
+    }
+
+    .logo-scroll {
+        width: 45px;
+        margin-top: 13px;
+    }
+
+    .social {
+        padding: 30px 30px 27px;
+        margin-bottom: 0;
+
+        svg {
+            path {
+                fill: #000 !important;
+            }
+        }
+    }
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    background: #000;
+    margin-top: 40px;
+    border-top: 2px solid #000;
+
+    p {
+        color: #FFF;
+        font-size: 18px;
+    }
+
+    .copyright {
+        color: #FFF;
+        padding-top: 60px;
+        font-size: 12px;
+
+        a {
+            color: #FFF;
+            text-decoration: underline;
+        }
+    }
+
+    .logo-footer {
+        max-width: 60px;
+    }
+
+    .menu li {
+        margin-bottom: 5px;
+
+        a {
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    .social {
+        padding-top: 0;
+
+        svg {
+            path {
+                fill: #fff !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .button {
+        padding: 8px 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 50px;
+
+        &.big {
+            font-size: 70px;
+            line-height: 60px;
+        }
+
+        &.normal {
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+
+    h4 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    header.burger.is-scrolled .button-menu {
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    header.burger.is-scrolled .logo-scroll {
+        margin-top: 0;
+    }
+
+    .strate-hero .strate-hero_inner h1.big {
+        font-size: 100px;
+        line-height: 80px;
+    }
+
+    .strate-hero h4 {
+        font-size: 20px;
+    }
+
+    .strate {
+        padding: 15px 0;
+    }
+
+    footer {
+        text-align: center;
+
+        .menu {
+            margin-bottom: 30px;
+        }
+
+        .logo-footer {
+            margin-bottom: 30px;
+        }
+
+        .social {
+            margin-top: 30px;
+
+            &.text-right {
+                text-align: center !important;
+            }
+        }
+    }
+}
