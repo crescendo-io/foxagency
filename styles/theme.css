@@ -153,7 +153,6 @@ header.burger.is-scrolled {
 footer {
     padding: 40px 0;
     background: #000;
-    margin-top: 40px;
     border-top: 2px solid #000;
 
     p {
@@ -196,6 +195,14 @@ footer {
     }
 }
 
+@media (min-width: 1735px) {
+    h2{
+        &.big{
+            font-size: 130px;
+            line-height: 120px;
+        }
+    }
+}
 @media (max-width: 768px) {
     .container {
         width: 100%;
