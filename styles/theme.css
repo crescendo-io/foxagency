@@ -292,4 +292,8 @@ footer {
             }
         }
     }
+
+    .strate-hero.full{
+        height: 85vh;
+    }
 }
