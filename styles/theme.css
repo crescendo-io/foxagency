@@ -9,6 +9,7 @@ header.burger .button-menu,
     font-family: "Bebas Neue", sans-serif;
 }
 
+
 h1 {
     font-weight: 400;
     font-style: normal;
@@ -140,13 +141,27 @@ header.burger.is-scrolled {
     .social {
         padding: 30px 30px 27px;
         margin-bottom: 0;
-
-        svg {
-            path {
-                fill: #000 !important;
-            }
-        }
     }
+}
+
+header.burger.is-scrolled .social svg path{
+    fill: #000 !important;
+}
+
+footer li a{
+    color: #FFF;
+    font-size: 14px;
+}
+
+footer .copyright a{
+    text-decoration: underline;
+    font-size: 14px;
+    color: #FFF;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 18px;
 }
 
 /* Footer */
@@ -154,25 +169,21 @@ footer {
     padding: 40px 0;
     background: #000;
     border-top: 2px solid #000;
-
-    p {
-        color: #FFF;
-        font-size: 18px;
+    .logo-footer{
+        max-width: 100%;
+        width: 60px;
     }
+
 
     .copyright {
         color: #FFF;
         padding-top: 60px;
         font-size: 12px;
-
-        a {
-            color: #FFF;
-            text-decoration: underline;
-        }
     }
 
     .logo-footer {
         max-width: 60px;
+        width: 60px;
     }
 
     .menu li {
