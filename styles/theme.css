@@ -164,6 +164,12 @@ footer p {
     font-size: 18px;
 }
 
+
+.page-id-360 .accordeon-item-title h3{
+    font-size: 40px;
+    line-height: 40px;
+}
+
 /* Footer */
 footer {
     padding: 40px 0;
