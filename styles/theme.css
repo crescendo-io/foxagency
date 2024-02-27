@@ -189,7 +189,7 @@ header.burger.is-scrolled .social svg path{
 .container-text-only p{
     display: block;
 }
-.container-text-only a{
+.container-text-only p a{
     color: inherit;
     text-decoration: underline;
 }
