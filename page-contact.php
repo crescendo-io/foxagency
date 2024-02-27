@@ -97,7 +97,7 @@ endif;
                 <div class="col-sm-12">
                     <label for="consentement">
                         <input type="checkbox" id="consentement" name="consentement" value="oui" required>
-                        J'accepte que mes données soient enregistrée chez The Fox Agency
+                        J'accepte que mes données soient enregistrées chez The Fox Agency
                     </label>
                 </div>
 
