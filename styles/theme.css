@@ -148,6 +148,56 @@ header.burger.is-scrolled .social svg path{
     fill: #000 !important;
 }
 
+.contact-form label{
+    font-size: 18px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form input[type='tel'],
+.contact-form textarea{
+    width: 100%;
+    appearance: none;
+    border: 1px solid #000;
+    resize: none;
+    background: #FFF;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.container-text-only.center p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form{
+    .return-message{
+        text-align: center;
+        padding: 120px 0;
+        font-size: 18px;
+    }
+}
+
+#form p{
+    font-size: 22px;
+}
+.container-text-only.right p{
+    margin-left: auto;
+}
+
+.container-text-only p{
+    display: block;
+}
+.container-text-only a{
+    color: inherit;
+    text-decoration: underline;
+}
+.contact-form{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
 footer li a{
     color: #FFF;
     font-size: 14px;
