@@ -25,7 +25,11 @@ function wpm_custom_post_type() {
         'hierarchical'        => false,
         'public'              => true,
         'has_archive'         => false,
-        'publicly_queryable'  => false
+        'publicly_queryable'  => false,
+        'with_front'          => false,
+        'query_var'           => false,
+        'exclude_from_search' => true,
+
         //'rewrite'			  => array( 'slug' => 'contact'),
 
     );

@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $contact_data = array(
             'post_title'   => $nom . ' ' . $prenom,
             'post_content' => $contact_content,
-            'post_status'  => 'publish',
+            'post_status'  => 'draft',
             'post_type'    => 'contact',
             'meta_input'   => array(
                 'nom'         => $nom,
