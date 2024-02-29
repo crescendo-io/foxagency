@@ -70,27 +70,27 @@ endif;
             <?php else: ?>
             <form method="post" class="row contact-form" action="#form">
                 <div class="col-sm-6">
-                    <label for="nom">Nom</label>
+                    <label for="nom">Nom *</label>
                     <input type="text" name="nom" required>
                 </div>
 
                 <div class="col-sm-6">
-                    <label for="prenom">Prénom</label>
+                    <label for="prenom">Prénom *</label>
                     <input type="text" name="prenom" required>
                 </div>
 
                 <div class="col-sm-6">
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                     <input type="email" name="email" required>
                 </div>
 
                 <div class="col-sm-6">
                     <label for="telephone">Téléphone</label>
-                    <input type="tel" name="telephone" required>
+                    <input type="tel" name="telephone">
                 </div>
 
                 <div class="col-sm-12">
-                    <label for="sujet">Sujet</label>
+                    <label for="sujet">Sujet *</label>
                     <textarea name="sujet" required></textarea>
                 </div>
 
