@@ -220,6 +220,11 @@ footer p {
     line-height: 40px;
 }
 
+.cky-btn-revisit-wrapper{
+    background: rgb(177,101,253) !important;
+    background: linear-gradient(50deg, rgba(177,101,253,1) 0%, rgba(254,0,107,1) 100%) !important;
+}
+
 /* Footer */
 footer {
     padding: 40px 0;
