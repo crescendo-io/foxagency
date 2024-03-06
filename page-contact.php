@@ -14,6 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sujet = sanitize_text_field($_POST["sujet"]);
     $consentement = isset($_POST["consentement"]) ? sanitize_text_field($_POST["consentement"]) : '';
 
+    $website_field = $_POST["website"];
+    if (!empty($website_field)) {
+        echo '<p>Votre formulaire a été détecté comme du spam. Veuillez réessayer.</p>';
+        die;
+    }
+
     // Vérifiez le consentement
     if (empty($consentement)) {
         echo '<p>Veuillez donner votre consentement en cochant la case.</p>';
@@ -99,6 +105,10 @@ endif;
                         <input type="checkbox" id="consentement" name="consentement" value="oui" required>
                         J'accepte que mes données soient enregistrées chez The Fox Agency
                     </label>
+                </div>
+                <div style="display: none;">
+                    <label for="website">Laissez ce champ vide :</label>
+                    <input type="text" name="website" id="website">
                 </div>
 
                 <div class="col-sm-12 text-center">
