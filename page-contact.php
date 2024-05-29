@@ -13,11 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telephone = sanitize_text_field($_POST["telephone"]);
     $sujet = sanitize_text_field($_POST["sujet"]);
     $consentement = isset($_POST["consentement"]) ? sanitize_text_field($_POST["consentement"]) : '';
-    $visitorIp = getVisitorIp();
-    
+    $captcha = sanitize_text_field($_POST["captcha"]);
+
 
     $website_field = $_POST["website"];
-    if (!empty($website_field)) {
+    if (!empty($website_field) || $captcha != '10') {
         echo '<p>Votre formulaire a été détecté comme du spam. Veuillez réessayer.</p>';
         die;
     }
@@ -100,6 +100,10 @@ endif;
                 <div class="col-sm-12">
                     <label for="sujet">Sujet *</label>
                     <textarea name="sujet" required></textarea>
+                </div>
+                <div class="col-sm-12">
+                    <label for="sujet">Combien font 8 + 2 *</label>
+                    <input type="text" name="captcha" required></input>
                 </div>
 
                 <div class="col-sm-12">
