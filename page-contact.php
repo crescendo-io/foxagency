@@ -14,11 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sujet = sanitize_text_field($_POST["sujet"]);
     $consentement = isset($_POST["consentement"]) ? sanitize_text_field($_POST["consentement"]) : '';
     $visitorIp = getVisitorIp();
-
-    if(!isIpFrench($visitorIp)){
-        die;
-    }
-
+    
 
     $website_field = $_POST["website"];
     if (!empty($website_field)) {
